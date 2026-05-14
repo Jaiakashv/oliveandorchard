@@ -1,4 +1,5 @@
-import Head from 'next/head';
+'use client';
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
@@ -6,14 +7,6 @@ import { motion } from 'framer-motion';
 export default function Contract() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* SEO Meta Tags */}
-      <Head>
-        <title>Olive & Orchard - Contract & Terms</title>
-        <meta name="description" content="Read Olive & Orchard's venue contract, terms, and policies. Ensure a smooth and memorable event experience with clear agreements and guidelines." />
-        <meta name="keywords" content="Olive Orchard contract, venue agreement, event terms, banquet hall policies, wedding venue contract" />
-        <meta name="author" content="Olive & Orchard" />
-        <link rel="canonical" href="https://oliveorchard.com/contract" />
-      </Head>
       <Navbar />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-b from-black to-[#0a0a0a]">

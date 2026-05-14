@@ -5,70 +5,9 @@ import { MapPin, Mail, Phone, Navigation, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import Head from 'next/head';
-
 export default function Contact() {
   return (
-    <>
-      {/* ── SEO ── */}
-      <Head>
-        <title>Contact Us | Olive &amp; Orchard Banquet Hall</title>
-        <meta
-          name="description"
-          content="Get in touch with Olive &amp; Orchard Banquet Hall. Visit us, call us, or send an email to start planning your perfect wedding, reception, or corporate event."
-        />
-        <meta
-          name="keywords"
-          content="contact Olive Orchard, banquet hall address, event venue phone, book wedding hall, corporate event venue contact"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Olive &amp; Orchard Banquet Hall" />
-        <link rel="canonical" href="https://oliveorchard.com/contact" />
-
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://oliveorchard.com/contact" />
-        <meta property="og:title" content="Contact Us | Olive &amp; Orchard Banquet Hall" />
-        <meta
-          property="og:description"
-          content="Reach out to Olive &amp; Orchard Banquet Hall to book your next unforgettable event. Find our address, phone number, and email."
-        />
-        <meta property="og:image" content="https://oliveorchard.com/og-image.jpg" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Us | Olive &amp; Orchard Banquet Hall" />
-        <meta
-          name="twitter:description"
-          content="Book your dream event at Olive &amp; Orchard. Contact us today for availability and pricing."
-        />
-
-        {/* Schema.org LocalBusiness */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "EventVenue",
-              name: "Olive & Orchard Banquet Hall",
-              url: "https://oliveorchard.com",
-              telephone: "+919999999999",
-              email: "info@oliveorchard.com",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "New no: 148, 1, Arcot Rd, next to Slam Fitness, Ganga Nagar",
-                addressLocality: "Kodambakkam, Chennai",
-                addressRegion: "Tamil Nadu",
-                postalCode: "600024",
-                addressCountry: "IN",
-              },
-              openingHours: "Mo-Su 09:00-22:00",
-            }),
-          }}
-        />
-      </Head>
-
-      <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black">
         <Navbar />
 
         {/* ── HERO ── */}
@@ -277,6 +216,5 @@ export default function Contact() {
         <Footer />
         <WhatsAppButton />
       </div>
-    </>
   );
 }
