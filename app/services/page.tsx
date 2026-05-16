@@ -10,8 +10,9 @@ import {
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { getWhatsappUrl, CONTACT_INFO } from '@/lib/constants';
 
-const WA_BASE = 'https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20inquire%20about%20';
+const WA_BASE = `https://wa.me/${CONTACT_INFO.whatsappPhone}?text=Hello%20I%20would%20like%20to%20inquire%20about%20`;
 
 /* ─── Data ─── */
 const services = [

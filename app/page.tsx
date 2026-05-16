@@ -180,10 +180,10 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
-              "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
-              "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
-              "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+              "https://oliveandorchards.netlify.app/photos/19.jpeg",
+              "https://oliveandorchards.netlify.app/photos/18.jpeg",
+              "https://oliveandorchards.netlify.app/photos/20.jpeg",
+              "https://oliveandorchards.netlify.app/photos/7.jpeg"
             ].map((src, index) => (
               <motion.div
                 key={index}

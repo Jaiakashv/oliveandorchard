@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { CONTACT_INFO, getWhatsappUrl } from '@/lib/constants';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,7 +77,7 @@ const Navbar = () => {
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5 }}
-              href="https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20book%20Olive%20%26%20Orchard%20Banquet%20Hall"
+              href={getWhatsappUrl("Hello I would like to book Olive & Orchard Banquet Hall")}
               target="_blank"
               rel="noopener noreferrer"
               className="gold-gradient text-[#7A0F19] px-6 py-2 rounded-full font-semibold hover-glow transition-all duration-300 flex items-center gap-2"
@@ -114,7 +115,7 @@ const Navbar = () => {
               </button>
             ))}
             <a
-              href="https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20book%20Olive%20%26%20Orchard%20Banquet%20Hall"
+              href={getWhatsappUrl("Hello I would like to book Olive & Orchard Banquet Hall")}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full mt-4 gold-gradient text-[#7A0F19] px-6 py-4 rounded-full font-bold text-center shadow-lg transform active:scale-95 transition-transform"

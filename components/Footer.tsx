@@ -2,10 +2,11 @@
 
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { CONTACT_INFO, getWhatsappUrl } from '@/lib/constants';
 
 const Footer = () => {
   const quickLinks = ['Home', 'About Us', 'Gallery', 'Services', 'Contact'];
-  const whatsappUrl = "https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20book%20Olive%20%26%20Orchard%20Banquet%20Hall";
+  const whatsappUrl = getWhatsappUrl("Hello I would like to book Olive & Orchard Banquet Hall");
 
   const scrollToSection = (section: string) => {
     const element = document.getElementById(section.toLowerCase().replace(' ', '-'));
@@ -86,18 +87,16 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="text-[#D4AF37]" size={20} />
-                <span className="text-gray-300">+91 99999 99999</span>
+                <span className="text-gray-300">{CONTACT_INFO.displayPhone}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-[#D4AF37]" size={20} />
-                <span className="text-gray-300">info@oliveorchard.com</span>
+                <span className="text-gray-300">{CONTACT_INFO.email}</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="text-[#D4AF37] mt-1 shrink-0" size={20} />
                 <span className="text-gray-300">
-                  New no: 148, 1, Arcot Rd, next to Slam Fitness,<br />
-                  Ganga Nagar, Kodambakkam, Chennai,<br />
-                  Tamil Nadu 600024, India
+                  {CONTACT_INFO.address}
                 </span>
               </div>
             </div>

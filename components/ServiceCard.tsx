@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { CONTACT_INFO } from '@/lib/constants';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -12,7 +13,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, image, delay = 0 }) => {
-  const whatsappUrl = "https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20book%20Olive%20%26%20Orchard%20Banquet%20Hall%20for%20" + encodeURIComponent(title);
+  const whatsappUrl = `https://wa.me/${CONTACT_INFO.whatsappPhone}?text=Hello%20I%20would%20like%20to%20book%20Olive%20%26%20Orchard%20Banquet%20Hall%20for%20${encodeURIComponent(title)}`;
 
   return (
     <motion.div

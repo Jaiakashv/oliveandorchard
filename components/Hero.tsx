@@ -2,13 +2,14 @@
 
 import { motion } from 'framer-motion';
 import { ChevronDown, Phone, Calendar } from 'lucide-react';
+import { getWhatsappUrl } from '@/lib/constants';
 
 interface HeroProps {
   logo?: string;
 }
 
 const Hero = ({ logo }: HeroProps) => {
-  const whatsappUrl = "https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20book%20Olive%20%26%20Orchard%20Banquet%20Hall";
+  const whatsappUrl = getWhatsappUrl("Hello I would like to book Olive & Orchard Banquet Hall");
 
   const scrollToNext = () => {
     const nextSection = document.getElementById('features');

@@ -5,6 +5,7 @@ import { MapPin, Mail, Phone, Navigation, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { CONTACT_INFO, getWhatsappUrl } from '@/lib/constants';
 export default function Contact() {
   return (
     <div className="min-h-screen bg-black">
@@ -78,8 +79,7 @@ export default function Contact() {
                 </div>
 
                 <div className="space-y-1 text-gray-300 text-base leading-relaxed mb-8">
-                  <p>New no: 148, 1, Arcot Rd, next to Slam Fitness</p>
-                  <p>Ganga Nagar, Kodambakkam, Chennai — 600024</p>
+                  <p>{CONTACT_INFO.address}</p>
                 </div>
 
                 <a
@@ -114,25 +114,25 @@ export default function Contact() {
                   <div className="flex items-center gap-3 text-gray-300">
                     <Mail size={16} className="text-[#D4AF37] flex-shrink-0" />
                     <a
-                      href="mailto:info@oliveorchard.com"
+                      href={`mailto:${CONTACT_INFO.email}`}
                       className="hover:text-[#D4AF37] transition-colors duration-300 text-base"
                     >
-                      info@oliveorchard.com
+                      {CONTACT_INFO.email}
                     </a>
                   </div>
                   <div className="flex items-center gap-3 text-gray-300">
                     <Phone size={16} className="text-[#D4AF37] flex-shrink-0" />
                     <a
-                      href="tel:+919999999999"
+                      href={`tel:+91${CONTACT_INFO.phone}`}
                       className="hover:text-[#D4AF37] transition-colors duration-300 text-base"
                     >
-                      +91 99999 99999
+                      {CONTACT_INFO.displayPhone}
                     </a>
                   </div>
                 </div>
 
                 <a
-                  href="https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20inquire%20about%20Olive%20%26%20Orchard%20Banquet%20Hall"
+                  href={getWhatsappUrl("Hello I would like to inquire about Olive & Orchard Banquet Hall")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-sm border-b border-[#D4AF37]/50 pb-0.5 hover:border-[#D4AF37] transition-colors duration-300"
@@ -200,7 +200,7 @@ export default function Contact() {
               </p>
             </div>
             <motion.a
-              href="https://wa.me/919999999999?text=Hello%20I%20would%20like%20to%20book%20Olive%20%26%20Orchard%20Banquet%20Hall"
+              href={getWhatsappUrl("Hello I would like to book Olive & Orchard Banquet Hall")}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
