@@ -82,12 +82,14 @@ function AccordionItem({ num, title, body, isOpen, onClick }: {
 
 /* ── Horizontal auto-scroll image strip ── */
 const images = [
-  'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&q=70',
-  'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=400&q=70',
-  'https://images.unsplash.com/photo-1519225421984-9461b484b945?w=400&q=70',
-  'https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=70',
-  'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&q=70',
-  'https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=400&q=70',
+  'https://oliveandorchards.netlify.app/photos/1.jpeg',
+  'https://oliveandorchards.netlify.app/photos/4.jpeg',
+  'https://oliveandorchards.netlify.app/photos/9.jpeg',
+'https://oliveandorchards.netlify.app/photos/20.jpeg',
+'https://oliveandorchards.netlify.app/photos/21.jpeg',
+'https://oliveandorchards.netlify.app/photos/22.jpeg'
+
+
 ];
 
 function ImageStrip() {
@@ -127,11 +129,11 @@ export default function About() {
   ];
 
   const milestones = [
-    { year: '2012', event: 'Founded' },
-    { year: '2015', event: 'Expanded' },
-    { year: '2018', event: 'Award Won' },
-    { year: '2021', event: 'Digital Launch' },
-    { year: '2024', event: 'Legacy Continues' },
+    { year: '2021', event: 'Founded' },
+    { year: '2022', event: 'Expanded' },
+    { year: '2023', event: 'Award Won' },
+    { year: '2024', event: 'Digital Launch' },
+    { year: '2025', event: 'Legacy Continues' },
   ];
 
   /* ── Clip-path wipe reveal ── */
@@ -153,7 +155,7 @@ export default function About() {
         >
           {/* Huge background number */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 text-[20rem] font-bold text-white/[0.02] font-playfair select-none leading-none pointer-events-none">
-            12
+            5
           </div>
 
           <motion.span
@@ -192,7 +194,7 @@ export default function About() {
             transition={{ delay: 0.6, duration: 0.7 }}
             className="text-gray-400 text-lg leading-relaxed max-w-md mb-10"
           >
-            For 12 years, Olive & Orchard has been the backdrop for the most cherished moments in thousands of lives. We are not in the events business — we are in the memories business.
+            For 5 years, Olive & Orchard has been the backdrop for the most cherished moments in thousands of lives. We are not in the events business — we are in the memories business.
           </motion.p>
 
           <motion.div
@@ -280,13 +282,13 @@ export default function About() {
             <h2 className="font-playfair text-5xl md:text-6xl font-bold text-white">
               Our <span className="text-[#D4AF37]">Numbers</span>
             </h2>
-            <p className="text-gray-500 mt-3 max-w-xl">Each ring represents a promise kept and a milestone earned over 12 years of dedication.</p>
+            <p className="text-gray-500 mt-3 max-w-xl">Each ring represents a promise kept and a milestone earned over 5 years of dedication.</p>
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
             <RingCounter value="5K+" label="Events" />
             <RingCounter value="50K+" label="Guests" color="#C0A060" />
-            <RingCounter value="12+" label="Years" color="#E8D5A3" />
+            <RingCounter value="5+" label="Years" color="#E8D5A3" />
             <RingCounter value="100%" label="Satisfaction" />
           </div>
         </div>
@@ -313,7 +315,7 @@ export default function About() {
               </motion.p>
 
               {/* Clip-path reveal on each line */}
-              {['In 2012, our founders stood', 'in an empty hall and saw', 'what others could not —', 'a place where magic lives.'].map((line, i) => (
+              {['In 2021, our founders stood', 'in an empty hall and saw', 'what others could not —', 'a place where magic lives.'].map((line, i) => (
                 <div key={i} className="overflow-hidden">
                   <motion.h2
                     initial={{ y: '100%' }}
@@ -340,7 +342,7 @@ export default function About() {
                 transition={{ duration: 0.7, delay: 0.3 }}
                 className="text-gray-400 leading-relaxed text-lg max-w-lg"
               >
-                Over a decade on, that vision has hosted 5,000+ events — weddings, anniversaries, corporate galas, milestone birthdays. We've been the canvas for every cherished chapter.
+                Half a decade on, that vision has hosted 5,000+ events — weddings, anniversaries, corporate galas, milestone birthdays. We've been the canvas for every cherished chapter.
               </motion.p>
             </div>
 
@@ -356,20 +358,20 @@ export default function About() {
                   <motion.img
                     whileHover={{ scale: 1.06 }}
                     transition={{ duration: 0.6 }}
-                    src="https://images.unsplash.com/photo-1519225421984-9461b484b945?w=500&q=80"
+                    src="https://oliveandorchards.netlify.app/photos/18.jpeg"
                     alt="Event at Olive & Orchard"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 text-white">
-                    <div className="text-[10px] text-[#D4AF37] font-bold tracking-widest uppercase">Est. 2012</div>
+                    <div className="text-[10px] text-[#D4AF37] font-bold tracking-widest uppercase">Est. 2021</div>
                   </div>
                 </div>
                 <div className="overflow-hidden rounded-2xl h-48">
                   <motion.img
                     whileHover={{ scale: 1.08 }}
                     transition={{ duration: 0.5 }}
-                    src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=500&q=80"
+                    src="https://oliveandorchards.netlify.app/photos/20.jpeg"
                     alt="Banquet Setup"
                     className="w-full h-full object-cover"
                   />
@@ -380,7 +382,7 @@ export default function About() {
                   <motion.img
                     whileHover={{ scale: 1.08 }}
                     transition={{ duration: 0.5 }}
-                    src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=500&q=80"
+                    src="https://oliveandorchards.netlify.app/photos/14.jpeg"
                     alt="Reception"
                     className="w-full h-full object-cover"
                   />
@@ -389,11 +391,116 @@ export default function About() {
                   <motion.img
                     whileHover={{ scale: 1.08 }}
                     transition={{ duration: 0.5 }}
-                    src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=500&q=80"
+                    src="https://oliveandorchards.netlify.app/photos/5.jpeg"
                     alt="Celebration"
                     className="w-full h-full object-cover"
                   />
                 </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── LEADERSHIP ── */}
+      <section className="py-28 bg-[#0a0a0a] border-t border-white/5">
+        <div className="container mx-auto px-6 max-w-6xl">
+          
+          {/* Founder */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+            {/* Text Side */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="order-2 lg:order-1"
+            >
+              <p className="text-[#D4AF37] text-xs font-bold tracking-[0.4em] uppercase mb-4">Leadership</p>
+              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white leading-tight mb-2">
+                Mr. SANTHAKUMAR
+              </h2>
+              <p className="text-[#D4AF37] font-medium text-lg mb-8 tracking-wide">
+                Founder
+              </p>
+              
+              <div className="space-y-6 text-gray-400 leading-relaxed">
+                <p>
+                  Mr. SANTHAKUMAR became a builder with nothing but 5+ years of experience from his father Mr. Thangaraj Nadar, a tycoon in real estate in the 70's. Since then, he has built the company up from ground with nothing but diligence and meticulous leadership.
+                </p>
+                <p>
+                  His hard work and dedication and an urge to learn made him stand amidst all storms the industry has seen over the years. He is a man of outbound knowledge and importance, acquired over the years. Rather than focusing on building a brand value he has acquired an undeniably everlasting face value for the company through him.
+                </p>
+                <p>
+                  His business has grown only along with all his clients who trust him and his word and the friendly faces he has gained over the years in the field with his unreal charm. He is beyond proud to have passed on the company to his son and his counsel has, is, and will always be the strong pillar of Anush foundations.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Image Side */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative order-1 lg:order-2"
+            >
+              <div className="relative overflow-hidden rounded-2xl aspect-[4/5] bg-[#050505] flex items-center justify-center group border border-[#D4AF37]/20">
+                <div className="absolute inset-0 bg-gradient-to-tl from-[#D4AF37]/10 to-transparent opacity-50" />
+                <motion.img
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.6 }}
+                  src="https://anushfoundations.com/wp-content/uploads/2024/06/SANTHAKUMAR.webp"
+                  alt="Mr. Santhakumar - Founder"
+                  className="w-full h-full object-cover relative z-10"
+                />
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Managing Director */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Image Side */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative"
+            >
+              <div className="relative overflow-hidden rounded-2xl aspect-[4/5] bg-[#050505] flex items-center justify-center group border border-[#D4AF37]/20">
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#D4AF37]/10 to-transparent opacity-50" />
+                <motion.img
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.6 }}
+                  src="https://anushfoundations.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-04-13-at-13.36.16-removebg-preview.png"
+                  alt="Mr. Anush Kumar - Managing Director"
+                  className="w-[85%] h-auto object-contain relative z-10 pt-10"
+                />
+              </div>
+            </motion.div>
+
+            {/* Text Side */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <p className="text-[#D4AF37] text-xs font-bold tracking-[0.4em] uppercase mb-4">Leadership</p>
+              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white leading-tight mb-2">
+                Mr. ANUSH KUMAR
+              </h2>
+              <p className="text-[#D4AF37] font-medium text-lg mb-8 tracking-wide">
+                B.E., MBA — Managing Director
+              </p>
+              
+              <div className="space-y-6 text-gray-400 leading-relaxed">
+                <p>
+                  Mr. ANUSH KUMAR, an MBA graduate and a third-generation developer, completed his Civil Engineering in an Anna University affiliated college. He joined work in a construction firm totally alienated from his forerunners to gain immense experience before joining work with his father.
+                </p>
+                <p>
+                  He possesses great attention to detail and keeps a sharp eye when it comes to planning and execution of the construction. He is an avid hard worker and a perfectionist who is very passionate towards his business and in creating a new name.
+                </p>
+                <p>
+                  He brings in meticulous leadership and a pioneering dream for his companies, bringing in a whole new perspective and potential. He has successfully created 3 brands in his late 20's. He also tries to be an active participant in the YMCA and other clubs and is known to be a socialite.
+                </p>
               </div>
             </motion.div>
           </div>
